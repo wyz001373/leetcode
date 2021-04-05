@@ -16,7 +16,7 @@ var twoSum = function (nums, target) {
         if (map.has(target - nums[k])) {
             return [map.get(target - nums[k]), k]
         } else {
-            map.set(nums[k], i);
+            map.set(nums[k], k);
         }
     }
     return [];
